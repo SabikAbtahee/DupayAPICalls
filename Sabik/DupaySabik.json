@@ -1,0 +1,606 @@
+{
+	"info": {
+		"_postman_id": "10494c47-0b19-4f12-83b2-347af6391166",
+		"name": "DUPAY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckStatus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{BaseURL}}/status",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Successful connection",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{BaseURL}}/status",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=ISO-8859-1"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Oct 2019 21:53:52 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Connection was successful"
+				}
+			]
+		},
+		{
+			"name": "signupOTPEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"sabikchamp@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/email/otp",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"email",
+						"otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Email already exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/user/otp/sabikchamp@gmail.com/",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"otp",
+								"sabikchamp@gmail.com",
+								""
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=ISO-8859-1"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Oct 2019 21:55:12 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Email already exists."
+				}
+			]
+		},
+		{
+			"name": "forgotPasswordOTPEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"bsse0827@iit.du.ac.bd\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/forgot/password/otp",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"forgot",
+						"password",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signupOTPVerification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"bsse0801@iit.du.ac.bd\",\n\t\"otpCode\":\"623\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/email/otp/verify",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"email",
+						"otp",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPasswordOTPVerification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"bsse0829@iit.du.ac.bd\",\n\t\"otpCode\":\"623063\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/forgot/password/otp/verify",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"forgot",
+						"password",
+						"otp",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signupMerchantAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"sabikchamp@gmail.com\",\n\t\"username\":\"62306s3\",\n\t\"password\":\"1qazZAA!!\",\n\t\"name\":\"sabik\",\n\t\"tradeInsurance\":\"asd\",\n\t\"NID\":\"NID\",\n\t\"balance\":0,\n\t\"type\":\"TYPE_A\",\n\t\"code\":\"code\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"bsse0829@iit.du.ac.bd\",\n\t\"password\":\"1qazZAA!!\",\n\t\"confirmPassword\":\"1qazZAQ!\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/forgot/password",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"forgot",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all merchants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/user/merchant-all-users",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"merchant-all-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseURL}}/merchantacc/merchant",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"merchantacc",
+						"merchant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Withdraw test1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BaseURL}}/withdraw",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"withdraw"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 13:15:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"bc9f821f-dd27-4544-8eab-df6e3adf00bc\",\n        \"transactionId\": null,\n        \"amount\": 20000,\n        \"withdrawDate\": \"2019-10-20T19:11:39.753336\",\n        \"status\": \"PENDING\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "createMerchantForWithdraw",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5ce30255-e548-4749-8599-f630879ac450",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"accountNumber\" : \"123\",\r\n        \"branch\": \"Dhaka\",\r\n        \"merchant\":{\r\n    \t\t\"id\": \"a119ea9e-45ec-4b26-871e-b4a7ed69de30\"\r\n        }\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/merchantacc/create",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"merchantacc",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\":\"tkhan\",\r\n        \"password\":\"iit123\"\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/auth",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Check",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseURL}}/api/admin/approve/b961d326-992b-403c-b170-05d8367fa73a",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"approve",
+						"b961d326-992b-403c-b170-05d8367fa73a"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
