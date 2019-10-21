@@ -1,0 +1,1838 @@
+{
+	"info": {
+		"_postman_id": "9d61972d-41b1-4be6-9595-ea556f31ac39",
+		"name": "dupay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/status",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerOtoEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"suravi.nipa@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/register/email/otp",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"register",
+						"email",
+						"otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registerOtoEmail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"bsse0818@iit.du.ac.bd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register/email/otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register",
+								"email",
+								"otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 09:29:01 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Otp has sent to your email.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "registerOtpVerify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"suravi.nipa@gmail.com\",\n\t\"otpCode\": \"988203\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/register/otp/verify",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"register",
+						"otp",
+						"verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registerOtpVerify",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"otpCode\": \"907147\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register/otp/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register",
+								"otp",
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 09:34:31 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Otp verification has succeeded!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "registerMerchant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"suravi\",\n\t\"email\": \"suravi.nipa@gmail.com\",\n\t\"password\":\"iit123\",\n\t\"name\": \"Suravi Akhter\",\n\t\"tradeInsurance\": \"1234\",\n\t\"NID\": \"756575757\",\n\t\"balance\": 0,\n\t\"MerchantType\": \"TYPE_A\",\n\t\"code\": \"code\"\n\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registerMerchant",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"hasan\",\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"password\":\"iit123\",\n\t\"name\": \"hasan\",\n\t\"tradeInsurance\": \"1234\",\n\t\"NID\": \"756575757\",\n\t\"balance\": 0,\n\t\"MerchantType\": \"TYPE_A\",\n\t\"code\": \"code\"\n\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/user",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 09:45:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Merchant created successfully"
+				}
+			]
+		},
+		{
+			"name": "Admin Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"bsse0801@iit.du.ac.bd\",\n\t\"password\": \"iit123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/login",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"bsse0801@iit.du.ac.bd\",\n\t\"password\": \"iit123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/login",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 09:55:36 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\"id\":\"6cf4d172-deed-4086-898a-23ee2da18109\",\"username\":\"tkhan\",\"email\":\"bsse0801@iit.du.ac.bd\",\"password\":\"\",\"name\":\"Tahmid Khan\",\"role\":\"ADMIN\",\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MTU2NTMzNSwiZXhwIjoxNTcyNDI5MzM1fQ.J-rGOx5Jnd0XvkralbG_QcbT8yLPnQdv8seLLCZOC7ZTBUUSWsOvyRT1_5YK5PMFuCER0ELdTkNmzC-U9eA-BA\"}"
+				}
+			]
+		},
+		{
+			"name": "Get all merchant for admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MTU2NTMzNSwiZXhwIjoxNTcyNDI5MzM1fQ.J-rGOx5Jnd0XvkralbG_QcbT8yLPnQdv8seLLCZOC7ZTBUUSWsOvyRT1_5YK5PMFuCER0ELdTkNmzC-U9eA-BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/admin/merchant",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"merchant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all merchant for admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{BaseURL}}/api/admin/merchant",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"merchant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 09:59:11 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\",\n        \"username\": \"hasan\",\n        \"email\": \"bsse0818@iit.du.ac.bd\",\n        \"password\": \"$2a$10$5ZxtWcP9QZ/ol0s1.uV1oeK5r564WUF5GsJbShmgjkC1gFfepzE4y\",\n        \"name\": \"hasan\",\n        \"tradeInsurance\": \"1234\",\n        \"balance\": 0,\n        \"type\": null,\n        \"code\": \"code\",\n        \"pending\": true,\n        \"approved\": false,\n        \"role\": \"MERCHANT\",\n        \"nid\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get merchant by id for admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MTY0ODU4MSwiZXhwIjoxNTcyNTEyNTgxfQ.WFfdNFuA9IEbDhhXG9ZQaK33oj9TI7V1O44-EMk_LlF4ZMKpDxyYhsMXHqci4O_H-rguPXmZ_I8xwMZbCTQ2zA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/admin/merchant/eb5e4a39-a46a-4ac6-b396-1984bf011b2c",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"merchant",
+						"eb5e4a39-a46a-4ac6-b396-1984bf011b2c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get merchant by id for admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{BaseURL}}/api/admin/merchant/eb5e4a39-a46a-4ac6-b396-1984bf011b2c",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"merchant",
+								"eb5e4a39-a46a-4ac6-b396-1984bf011b2c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 10:01:18 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\",\n    \"username\": \"hasan\",\n    \"email\": \"bsse0818@iit.du.ac.bd\",\n    \"password\": \"$2a$10$5ZxtWcP9QZ/ol0s1.uV1oeK5r564WUF5GsJbShmgjkC1gFfepzE4y\",\n    \"name\": \"hasan\",\n    \"tradeInsurance\": \"1234\",\n    \"balance\": 0,\n    \"type\": null,\n    \"code\": \"code\",\n    \"pending\": true,\n    \"approved\": false,\n    \"role\": \"MERCHANT\",\n    \"nid\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Approve merchant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MTU2NTMzNSwiZXhwIjoxNTcyNDI5MzM1fQ.J-rGOx5Jnd0XvkralbG_QcbT8yLPnQdv8seLLCZOC7ZTBUUSWsOvyRT1_5YK5PMFuCER0ELdTkNmzC-U9eA-BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/admin/approve/merchant/dab887df-54ce-40b9-b0c5-c8c4adbc328b23",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"approve",
+						"merchant",
+						"dab887df-54ce-40b9-b0c5-c8c4adbc328b23"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Approve merchant",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/admin/approve/merchant/eb5e4a39-a46a-4ac6-b396-1984bf011b2c",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"approve",
+								"merchant",
+								"eb5e4a39-a46a-4ac6-b396-1984bf011b2c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 10:04:53 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Merchant hasan has approved.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update Admin Information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MTU2NTMzNSwiZXhwIjoxNTcyNDI5MzM1fQ.J-rGOx5Jnd0XvkralbG_QcbT8yLPnQdv8seLLCZOC7ZTBUUSWsOvyRT1_5YK5PMFuCER0ELdTkNmzC-U9eA-BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"6cf4d172-deed-4086-898a-23ee2da181091\",\n\t\"username\": \"tkhana\",\n\t\"email\": \"bsse0801@iit.du.ac.bd\",\n\t\"password\": \"iit123\",\n\t\"name\": \"Tahmid\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/admin",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"admin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update Admin Information",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"6cf4d172-deed-4086-898a-23ee2da18109\",\n\t\"username\": \"tkhana\",\n\t\"email\": \"bsse0801@iit.du.ac.bd\",\n\t\"password\": \"iit123\",\n\t\"name\": \"Tahmid\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 10:13:41 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User information updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "merchant login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MTU2NTMzNSwiZXhwIjoxNTcyNDI5MzM1fQ.J-rGOx5Jnd0XvkralbG_QcbT8yLPnQdv8seLLCZOC7ZTBUUSWsOvyRT1_5YK5PMFuCER0ELdTkNmzC-U9eA-BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"suravi.nipa@gmail.com\",\n\t\"password\": \"iit123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/login",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update Admin Information",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"6cf4d172-deed-4086-898a-23ee2da18109\",\n\t\"username\": \"tkhana\",\n\t\"email\": \"bsse0801@iit.du.ac.bd\",\n\t\"password\": \"iit123\",\n\t\"name\": \"Tahmid\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 10:13:41 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User information updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "merchant information by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgxOEBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX01FUkNIQU5UIl0sImlhdCI6MTU3MTU2Njg1NSwiZXhwIjoxNTcyNDMwODU1fQ.qAU5hIArpvK72XE7mLHigC1ehBWfKNsS6s6xDfSEC7Qhh-a_hqFjYhK4bV5VMOgQ98TbH8UNSawnnGd4oIeJZA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"6cf4d172-deed-4086-898a-23ee2da18109\",\n\t\"username\": \"tkhana\",\n\t\"email\": \"bsse0801@iit.du.ac.bd\",\n\t\"password\": \"iit123\",\n\t\"name\": \"Tahmid\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/merchant/eb5e4a39-a46a-4ac6-b396-1984bf011b2c",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"merchant",
+						"eb5e4a39-a46a-4ac6-b396-1984bf011b2c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "merchant information by Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{BaseURL}}/api/merchant/eb5e4a39-a46a-4ac6-b396-1984bf011b2c",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"merchant",
+								"eb5e4a39-a46a-4ac6-b396-1984bf011b2c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 10:22:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\",\n    \"username\": \"hasan\",\n    \"email\": \"bsse0818@iit.du.ac.bd\",\n    \"password\": \"$2a$10$5ZxtWcP9QZ/ol0s1.uV1oeK5r564WUF5GsJbShmgjkC1gFfepzE4y\",\n    \"name\": \"hasan\",\n    \"tradeInsurance\": \"1234\",\n    \"balance\": 0,\n    \"type\": null,\n    \"code\": \"code\",\n    \"pending\": false,\n    \"approved\": true,\n    \"role\": \"MERCHANT\",\n    \"nid\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "merchant update  information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgxOEBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX01FUkNIQU5UIl0sImlhdCI6MTU3MTU2Njg1NSwiZXhwIjoxNTcyNDMwODU1fQ.qAU5hIArpvK72XE7mLHigC1ehBWfKNsS6s6xDfSEC7Qhh-a_hqFjYhK4bV5VMOgQ98TbH8UNSawnnGd4oIeJZA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\",\n\t\"username\": \"hasan\",\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"password\":\"iit123\",\n\t\"name\": \"hasan\",\n\t\"tradeInsurance\": \"1234\",\n\t\"NID\": \"756575757\",\n\t\"balance\": 0,\n\t\"MerchantType\": \"TYPE_A\",\n\t\"code\": \"code\",\n\t\"pending\":\"false\",\n\t\"approved\":\"true\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/merchant",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"merchant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "merchant update  information",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\",\n\t\"username\": \"hasan\",\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"password\":\"iit123\",\n\t\"name\": \"hasan tarek\",\n\t\"tradeInsurance\": \"1234\",\n\t\"NID\": \"756575757\",\n\t\"balance\": 0,\n\t\"MerchantType\": \"TYPE_A\",\n\t\"code\": \"code\",\n\t\"pending\":\"false\",\n\t\"approved\":\"true\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/merchant",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"merchant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 10:58:42 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User information updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "resetPasswordEmailOtpSend",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"suravi.nipa@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/reset/password/email/otp",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"reset",
+						"password",
+						"email",
+						"otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "resetPasswordEmailOtpSend",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"bsse0818@iit.du.ac.bd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/user/reset/password/email/otp",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"reset",
+								"password",
+								"email",
+								"otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 11:06:36 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Otp has sent to your email.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "resetPasswordEmailOtpVerification",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"bsse0825@iit.du.ac.bd\",\n\t\"otpCode\": \"504967\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/reset/password/otp/verify",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"reset",
+						"password",
+						"otp",
+						"verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "resetPasswordEmailOtpVerification",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"otpCode\": \"215617\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/user/reset/password/otp/verify",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"reset",
+								"password",
+								"otp",
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 11:08:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Otp verification has succeeded!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "reset password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"suravi.nipa@gmail.com\",\n\t\"newPassword\": \"iit123\",\n\t\"confirmPassword\": \"iit12334\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/reset/password",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"reset",
+						"password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "reset password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"newPassword\": \"iit123\",\n\t\"confirmPassword\": \"iit123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/user/reset/password",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"reset",
+								"password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 11:14:10 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"headers\": {},\n    \"body\": {\n        \"message\": \"Password reset successfully \"\n    },\n    \"statusCode\": \"OK\",\n    \"statusCodeValue\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "change password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXJhdmkubmlwYUBnbWFpbC5jb20iLCJhdXRob3JpdGllcyI6WyJST0xFX01FUkNIQU5UIl0sImlhdCI6MTU3MTY1MDgwMSwiZXhwIjoxNTcyNTE0ODAxfQ.i6CQHV9nMX9xEhomtZ8nwGLyjaOTVrUR4bqbtUCogVWUJOgvvvu-hCjDBAjcTvcbRnul5-5dcX2SD1Yjv8HqOA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"suravi.nipa@gmail.com\",\n\t\"oldPassword\": \"iit123\",\n\t\"newPassword\": \"iit12334\",\n\t\"confirmPassword\": \"iit12334\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/change/password",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"change",
+						"password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "reset password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"bsse0818@iit.du.ac.bd\",\n\t\"newPassword\": \"iit123\",\n\t\"confirmPassword\": \"iit123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/user/reset/password",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"reset",
+								"password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Oct 2019 11:14:10 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"headers\": {},\n    \"body\": {\n        \"message\": \"Password reset successfully \"\n    },\n    \"statusCode\": \"OK\",\n    \"statusCodeValue\": 200\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
