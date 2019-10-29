@@ -1919,7 +1919,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjgxMzQyLCJpYXQiOjE1NzIyNzc3NDJ9.RxVfz6f4VbPu27y3gEfTpvVDci-01fizF_Fh6ZH604XoYh2OJpp3fx_AcQ81iJGBKi1NRdP8t_ZIAw0fq8IHbXDJ9bUNEKzCXTock0FeRaswDZLFvF6ErDwRu-csYH-NmSMQFvC4b0Ayo3VdljLcyJAsT238Y3_KU9rWmYWGjlAcpVcExQN_sf6HmEHFGSjp7zY099l6hKSk3Qh-GPO0QCX7JiSgiu1ItuJgFOVV4WfBBaomcz5kW18b36nHWNBmRHUEisxV1csaR735TKjYiMnb_LDSg9G1TUDeBiRdh2YeOxfBk36tCLB-U5w4JMmN9d-FoMJe3AmBrvD0wCWlXQ"
+						"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMjAwYTRlYTQtODM2Mi00YmExLWFmZGItY2ViNTJlYWEzY2RmIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIzMzM3NjIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMzM3MzYyLCJpYXQiOjE1NzIzMzM3NjJ9.QLuSz2UJ2eeqxXeVU5E3DZaOIq7IV4LkJ_LirCwnJN9MIWH7Yt1JMJMmIxuSA5c8asIalM2i6GJK2ZuLX1QliVHU_fQbpYNCYNpzX1xhnQrMuHgG7ofVUCXJ0jo9kDnnzPA1dl1M3NM0TLkgEmzk41TBw6RSsyGXpHq3zxmtrsvNuoIEp3FqXeudeKki37ju3yy1sysVQa3f-c84f6-tPL5JWQ5YEOSyDb-RVqmuQc08d7cNKLoFTsnrPazAXAPb_tDMKt54KmGwcGmh8Ov3woruS28MNoF8CgdeibrZON-OvJ7AL4i0sIlrI5wwSQgLK2ZJgZ5RJDfZPlSps5eAtA"
 					},
 					{
 						"key": "x-app-key",
@@ -1943,7 +1943,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/query/IK4RK0W1572275141178",
+					"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/query/2LXKTZ91572334029999",
 					"host": [
 						"{{BkashUrl}}"
 					],
@@ -1952,7 +1952,7 @@
 						"checkout",
 						"payment",
 						"query",
-						"IK4RK0W1572275141178"
+						"2LXKTZ91572334029999"
 					]
 				}
 			},
@@ -5185,7 +5185,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\"paymentID\":\"IUSFGLV1572333908197\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -5193,7 +5193,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{BaseUrl}}/api/external/bkash/payment/LU8D36G1572284168551",
+					"raw": "{{BaseUrl}}/api/external/bkash/query/payment",
 					"host": [
 						"{{BaseUrl}}"
 					],
@@ -5201,8 +5201,8 @@
 						"api",
 						"external",
 						"bkash",
-						"payment",
-						"LU8D36G1572284168551"
+						"query",
+						"payment"
 					]
 				}
 			},
@@ -5721,6 +5721,91 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Bkash Query Payment From Server",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"paymentID\":\"IUSFGLV1572333908197\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/api/external/bkash/query/payment",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"external",
+								"bkash",
+								"query",
+								"payment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 10:10:13 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"IUSFGLV1572333908197\",\n    \"createTime\": \"2019-10-29T07:25:08:419 GMT+0000\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": 10,\n    \"currency\": \"BDT\",\n    \"refundAmount\": 0,\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
 				}
 			]
 		},
@@ -6288,11 +6373,1458 @@
 					"body": "{\n    \"paymentID\": \"LU8D36G1572284168551\",\n    \"createTime\": \"2019-10-28T17:36:08:771 GMT+0000\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": 10,\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\",\n    \"refundAmount\": 0\n}"
 				}
 			]
+		},
+		{
+			"name": "Surecash Create Payment From Server",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w",
+						"disabled": true
+					},
+					{
+						"key": "x-app-key",
+						"type": "text",
+						"value": "5tunt4masn6pv2hnvte1sb5n3j",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n\t\"customerMobileNumber\":\"01959118338\", \r\n\t\"surecashAccountNo\":\"019591183389\", \r\n\t\"customerId\":\"\",\r\n\t\"billNo\":\"24234\", \r\n\t\"amount\":\"5\", \r\n\t\"note\":\"Online payment\", \r\n\t\"Description\":\"purchased 5 books ofBPB Publication\", \r\n\t\"smsTemplate\":\"SMSText\"\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/external/surecash/payment",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"external",
+						"surecash",
+						"payment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Bkash Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": "sandboxTestUser"
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "hWD@8vtzw0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\",\r\n\t\"refresh_token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/refresh",
+							"protocol": "https",
+							"host": [
+								"checkout",
+								"sandbox",
+								"bka",
+								"sh"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"refresh"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 13:44:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "8702a250-f68a-4619-bed5-8996a1560046"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRqNXGS6yQ0FpvQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6f0bb-394d85027dd5ecc9f81a0a27;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjczODY4LCJpYXQiOjE1NzIyNzAyNjh9.F7zAcjiffm2MuKcktaZ3d90cEaiMpf9Y3CmwpUbcLy8WsCQBZqxOu4mDkU_E1mtX-UEzG7X_cOozW5BS6p05quku5F29xhj_XiNaTTQ3z9sypb3_f6KON9V1oYTYNl29wyABUof7rEVypxlwqo1Hbi8lRYPlUdssyEOZlRXwNfxgf9D7dUn1qE8PtxTJd2tA4zYe7DO_4D3wcyY87rn-FVAWkl3NMwIhnHlVq4ct1vaPLsRmZI2hnFsNI_KpfxNy1BqIEXN8q0dgyxAxB82TS61pvkwZLTYA8a6ciWvG_bc29ai6z5tuxEmcSDZ7YE4MGF2Q2LEv8RjvF7zRDcSmmg\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\n}"
+				},
+				{
+					"name": "Bkash Create Payment (for personal use)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w"
+							},
+							{
+								"key": "x-app-key",
+								"type": "text",
+								"value": "5tunt4masn6pv2hnvte1sb5n3j"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/create",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"payment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 15:02:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "99d3178f-fa1e-469d-9a9f-2fbaeeb0d458"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CR1m5HXwyQ0FTFQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db702f8-5ae5463768b93482258181b2;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Bkash Create Payment (for personal use)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w"
+							},
+							{
+								"key": "x-app-key",
+								"type": "text",
+								"value": "5tunt4masn6pv2hnvte1sb5n3j"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/create",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"payment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 15:02:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "99d3178f-fa1e-469d-9a9f-2fbaeeb0d458"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CR1m5HXwyQ0FTFQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db702f8-5ae5463768b93482258181b2;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Get Bkash Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "username",
+								"value": "sandboxTestUser",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "hWD@8vtzw0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/grant",
+							"protocol": "https",
+							"host": [
+								"checkout",
+								"sandbox",
+								"bka",
+								"sh"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"grant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 12:39:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "fd8a7a8f-b58e-4f46-941b-c5ee9fced7dd"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRgpOHqYyQ0FWJA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6e16e-379a1748fee305dc370c65ac;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiZmFkOWYxYjQtODdjYy00OTJhLTk4NDEtNmRjYmI1ZjkwY2E4IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNjYzNTAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjY5OTUwLCJpYXQiOjE1NzIyNjYzNTB9.LiyuKBc39JZU7S6hxWMv6AhnOHTYxcJTaba-yiK-UI2rf89JlsOm7Ru32YbNPRMzPCDopHbbER9Bbi1946PhAJc9UEuzVar2r9an3akAhcX7llL6-TJYRJ1cLLhlRTEMMJ_Kv6f3S3ZwYDSEj5oSZHm5AHqNDwUMkGjXYskAXXJtD9aPM-c4e0Vf3jO7fsI2rXV-kU2UwGzouSJzMA2owA5SfLeiDJKXesyG5pMSdM2EdNKYdNeWqobYqvFMrTtWrEPP6dmUx5G1hbZwy_Sr69IrdQcefS-MJ_cs7-935WzJhEnO4n-cLODHLM49DT6xkD5HsaewzM0edqbl5Wrtow\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.UsLJFeSQR1FU0mdmUH_7kUQEZ-X62l4VRfvGXRdzOl2ILl54MYVW8vCs7qrmyWH-izH9I5IeXZLl5Q6fi46PzxDVftMI1emdCGoI81fC4L-F940Wg-PpKF4u4cmlahprXd-CCACeEDNlpRtWHlTVbTxS_oAS0cTtTGRQHrR0HU5zyRHy-XhsyObRYYV7HVDt9w1RVQc-Tw-0LxaV0z4sQf4JWpjNyJkrYkugKXpmy6Ep9eKTqDzNYYQ70LMimaZoUFLTR0FIQhrZXbF6PkSFIQcOR8sBvxYqtWO9ykb5Fwqhq1xIV62GTAh8qVvvzWlCuRKlKEWGCLKomYvQgJxP4w.jWGwaEyWpxhTycod.fWaetokBXXW96jz0ASmkzxwov8eNwx57jr4n3lTUZwenTrLCNYOnrcbnwl4_epSa5-Kf2wiK7W9a7RGgx8vpdBloaEsHlTwbIYRkr7ZnzH5vM0Ty2WP0uZ19rh7rMqyySnWaufdBvR9m5gzbcERHeZ2WnAM_k3JZV3_snecusgGywbH5BlKQzYAlWZFNVntEPPB4jUt-lfOE-NzPGtrJHDJ6AxIvi07bDd8KVhaYBb01m-BJAjyCzh3fhBw5iky49J02kgWmCZU77KyWUdceWjE-F2aRI6pWVTpxdWEO9K9QE7vMxo5h-nwEgVQawNXc5aukRmfGHNllntwx5N6-Y4gSS9ykZYhUzenOMeBB9bb6SHCuN00wjY2PWKz6cMPW0BHlq4eT7u0aPwCz3IjQtk6V9NJYsEDWuEteqaW7lYA2lLv0RQF5jtBFeLuI-sGDrn32IezLrRhvgialQim71OE9mAKvGKyU1yikSshQ5UFPBXeKF1s1AHVujjISpcpxkBjL7ZEkmJ1--XcpsngOWLPdUAwzlWzpGS1UqGhbaPZhJMN6rlGEDpDHs5HywcmokKgXtznRdzJqi6iX1D_lrQPjOYN4eTt7mzRRP8Txd9Ng76IN5NbsTnPG55GmceAftl2Wmz-tI33pQaI2yETV7E4LMireM-piup2DJD46_utU62QYWBh_6DrzO5oz3Tl2JSE6B9SDkCRslcekaDVLmrdvQP2Nf8LmfXoKw4aRIefh0DsOSWlI-3gdX3DWbXhBvv1pnJgVZWCZVVGOGbf4znKppMpioSQ4cLHu_K0AJHhmEZ2v3bGaZzwpA9hLs-8EgWQ1wxw-O3wj_lkw5juW5YQ_5PN-Uwrelv7jDif8zSa_dnLWGFxUvRIA4DupGwh7Nl74lfAoeyZTQGQdBgI99FHnYzJxV7SUVN_bpwKUDaMP2b-4ZoXR2JSYwR8PdcBN8WNGPvhVhW8RNajfvIoTs-hLQ94Z-GrmRZvQUwPrtGwKDHc-q3BuSyvd7FD_sUPbNiUAwZLmdJNmbAZJ1IvRtOol7gTu8JyRcK9uTEW8Q5HYwvG5qtaBS4nwp0WOon2qyiz_NX3H9NGK9HxD5XshonEnK3_zOn8D6VOggubcaFNgnDs0jCGk7BObA_s8L9j46jEasw35ntkoDgjLe4C-0U1oRH6eowW-DGrwZzX_03bcaOCulReWUSynql3RgkReIwwUfvjyhIxtAKn9HtBi2MgZzDlHJelJkm_TxWl7z3cOLxyjoqw6lW2t7xHbkq7PZGp0ZKawaQOJ97-LhYySfC7zuQXNEYYNLdx8tJI.JhzY8mb7YFAvloYoynVFXQ\"\n}"
+				},
+				{
+					"name": "Get Bkash Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": "sandboxTestUser"
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "hWD@8vtzw0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\",\r\n\t\"refresh_token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/token/refresh",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"refresh"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 13:55:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "73586bfe-f780-442a-97ae-4e4d326a0d90"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRrwcG-RSQ0Ftdg="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6f335-4b25d0324cf582a076c92cb0;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc0NTAyLCJpYXQiOjE1NzIyNzA5MDJ9.JgCZm3b5_3kOrCZ_6ngBQhhBSp3u6oIhLTarwYq5SU3XDzogZ7NCrVMrzt7M7AsmbqcA64XBHZoD4n6DKFx7FvUR_sLwTf2FoRArw7pNREaAoyYt3SoMRCeX6bs7cIzGrb4XPriOsvTEF8i1C6Jjm4hj8Nm2YNamWaRr_9DHq-bKJIS-bQYc3p_BPcYeat6Jhna5_m72iDO3_HVJKybwiduqGurwymC4CoPqUpcOqMcqKFPzNU3OUzT8owB9J1ICjIb-CvKTKJC-4bycpxnKr6AS9qEMZVrTpwZe0PnDM48m_Pb0vykvT6HVqwDC1BNojUGdXKewO_Sj0jhDl7QQKA\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Surecash Query Payment From Server Using Process Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n\t\"processId\": \"12010cf8-f2de-4df8-83fe-cb9039a14b74\"\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/external/surecash/query/payment",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"external",
+						"surecash",
+						"query",
+						"payment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Bkash Create Payment (for personal use)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w"
+							},
+							{
+								"key": "x-app-key",
+								"type": "text",
+								"value": "5tunt4masn6pv2hnvte1sb5n3j"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/create",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"payment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 15:02:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "99d3178f-fa1e-469d-9a9f-2fbaeeb0d458"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CR1m5HXwyQ0FTFQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db702f8-5ae5463768b93482258181b2;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Bkash Create Payment (for personal use)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w"
+							},
+							{
+								"key": "x-app-key",
+								"type": "text",
+								"value": "5tunt4masn6pv2hnvte1sb5n3j"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/create",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"payment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 15:02:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "99d3178f-fa1e-469d-9a9f-2fbaeeb0d458"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CR1m5HXwyQ0FTFQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db702f8-5ae5463768b93482258181b2;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Get Bkash Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": "sandboxTestUser"
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "hWD@8vtzw0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\",\r\n\t\"refresh_token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/refresh",
+							"protocol": "https",
+							"host": [
+								"checkout",
+								"sandbox",
+								"bka",
+								"sh"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"refresh"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 13:44:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "8702a250-f68a-4619-bed5-8996a1560046"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRqNXGS6yQ0FpvQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6f0bb-394d85027dd5ecc9f81a0a27;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjczODY4LCJpYXQiOjE1NzIyNzAyNjh9.F7zAcjiffm2MuKcktaZ3d90cEaiMpf9Y3CmwpUbcLy8WsCQBZqxOu4mDkU_E1mtX-UEzG7X_cOozW5BS6p05quku5F29xhj_XiNaTTQ3z9sypb3_f6KON9V1oYTYNl29wyABUof7rEVypxlwqo1Hbi8lRYPlUdssyEOZlRXwNfxgf9D7dUn1qE8PtxTJd2tA4zYe7DO_4D3wcyY87rn-FVAWkl3NMwIhnHlVq4ct1vaPLsRmZI2hnFsNI_KpfxNy1BqIEXN8q0dgyxAxB82TS61pvkwZLTYA8a6ciWvG_bc29ai6z5tuxEmcSDZ7YE4MGF2Q2LEv8RjvF7zRDcSmmg\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\n}"
+				},
+				{
+					"name": "Get Bkash Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": "sandboxTestUser"
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "hWD@8vtzw0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\",\r\n\t\"refresh_token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/token/refresh",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"refresh"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 13:55:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "73586bfe-f780-442a-97ae-4e4d326a0d90"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRrwcG-RSQ0Ftdg="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6f335-4b25d0324cf582a076c92cb0;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc0NTAyLCJpYXQiOjE1NzIyNzA5MDJ9.JgCZm3b5_3kOrCZ_6ngBQhhBSp3u6oIhLTarwYq5SU3XDzogZ7NCrVMrzt7M7AsmbqcA64XBHZoD4n6DKFx7FvUR_sLwTf2FoRArw7pNREaAoyYt3SoMRCeX6bs7cIzGrb4XPriOsvTEF8i1C6Jjm4hj8Nm2YNamWaRr_9DHq-bKJIS-bQYc3p_BPcYeat6Jhna5_m72iDO3_HVJKybwiduqGurwymC4CoPqUpcOqMcqKFPzNU3OUzT8owB9J1ICjIb-CvKTKJC-4bycpxnKr6AS9qEMZVrTpwZe0PnDM48m_Pb0vykvT6HVqwDC1BNojUGdXKewO_Sj0jhDl7QQKA\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\n}"
+				},
+				{
+					"name": "Get Bkash Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "username",
+								"value": "sandboxTestUser",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "hWD@8vtzw0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/grant",
+							"protocol": "https",
+							"host": [
+								"checkout",
+								"sandbox",
+								"bka",
+								"sh"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"grant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 12:39:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "fd8a7a8f-b58e-4f46-941b-c5ee9fced7dd"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRgpOHqYyQ0FWJA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6e16e-379a1748fee305dc370c65ac;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiZmFkOWYxYjQtODdjYy00OTJhLTk4NDEtNmRjYmI1ZjkwY2E4IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNjYzNTAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjY5OTUwLCJpYXQiOjE1NzIyNjYzNTB9.LiyuKBc39JZU7S6hxWMv6AhnOHTYxcJTaba-yiK-UI2rf89JlsOm7Ru32YbNPRMzPCDopHbbER9Bbi1946PhAJc9UEuzVar2r9an3akAhcX7llL6-TJYRJ1cLLhlRTEMMJ_Kv6f3S3ZwYDSEj5oSZHm5AHqNDwUMkGjXYskAXXJtD9aPM-c4e0Vf3jO7fsI2rXV-kU2UwGzouSJzMA2owA5SfLeiDJKXesyG5pMSdM2EdNKYdNeWqobYqvFMrTtWrEPP6dmUx5G1hbZwy_Sr69IrdQcefS-MJ_cs7-935WzJhEnO4n-cLODHLM49DT6xkD5HsaewzM0edqbl5Wrtow\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.UsLJFeSQR1FU0mdmUH_7kUQEZ-X62l4VRfvGXRdzOl2ILl54MYVW8vCs7qrmyWH-izH9I5IeXZLl5Q6fi46PzxDVftMI1emdCGoI81fC4L-F940Wg-PpKF4u4cmlahprXd-CCACeEDNlpRtWHlTVbTxS_oAS0cTtTGRQHrR0HU5zyRHy-XhsyObRYYV7HVDt9w1RVQc-Tw-0LxaV0z4sQf4JWpjNyJkrYkugKXpmy6Ep9eKTqDzNYYQ70LMimaZoUFLTR0FIQhrZXbF6PkSFIQcOR8sBvxYqtWO9ykb5Fwqhq1xIV62GTAh8qVvvzWlCuRKlKEWGCLKomYvQgJxP4w.jWGwaEyWpxhTycod.fWaetokBXXW96jz0ASmkzxwov8eNwx57jr4n3lTUZwenTrLCNYOnrcbnwl4_epSa5-Kf2wiK7W9a7RGgx8vpdBloaEsHlTwbIYRkr7ZnzH5vM0Ty2WP0uZ19rh7rMqyySnWaufdBvR9m5gzbcERHeZ2WnAM_k3JZV3_snecusgGywbH5BlKQzYAlWZFNVntEPPB4jUt-lfOE-NzPGtrJHDJ6AxIvi07bDd8KVhaYBb01m-BJAjyCzh3fhBw5iky49J02kgWmCZU77KyWUdceWjE-F2aRI6pWVTpxdWEO9K9QE7vMxo5h-nwEgVQawNXc5aukRmfGHNllntwx5N6-Y4gSS9ykZYhUzenOMeBB9bb6SHCuN00wjY2PWKz6cMPW0BHlq4eT7u0aPwCz3IjQtk6V9NJYsEDWuEteqaW7lYA2lLv0RQF5jtBFeLuI-sGDrn32IezLrRhvgialQim71OE9mAKvGKyU1yikSshQ5UFPBXeKF1s1AHVujjISpcpxkBjL7ZEkmJ1--XcpsngOWLPdUAwzlWzpGS1UqGhbaPZhJMN6rlGEDpDHs5HywcmokKgXtznRdzJqi6iX1D_lrQPjOYN4eTt7mzRRP8Txd9Ng76IN5NbsTnPG55GmceAftl2Wmz-tI33pQaI2yETV7E4LMireM-piup2DJD46_utU62QYWBh_6DrzO5oz3Tl2JSE6B9SDkCRslcekaDVLmrdvQP2Nf8LmfXoKw4aRIefh0DsOSWlI-3gdX3DWbXhBvv1pnJgVZWCZVVGOGbf4znKppMpioSQ4cLHu_K0AJHhmEZ2v3bGaZzwpA9hLs-8EgWQ1wxw-O3wj_lkw5juW5YQ_5PN-Uwrelv7jDif8zSa_dnLWGFxUvRIA4DupGwh7Nl74lfAoeyZTQGQdBgI99FHnYzJxV7SUVN_bpwKUDaMP2b-4ZoXR2JSYwR8PdcBN8WNGPvhVhW8RNajfvIoTs-hLQ94Z-GrmRZvQUwPrtGwKDHc-q3BuSyvd7FD_sUPbNiUAwZLmdJNmbAZJ1IvRtOol7gTu8JyRcK9uTEW8Q5HYwvG5qtaBS4nwp0WOon2qyiz_NX3H9NGK9HxD5XshonEnK3_zOn8D6VOggubcaFNgnDs0jCGk7BObA_s8L9j46jEasw35ntkoDgjLe4C-0U1oRH6eowW-DGrwZzX_03bcaOCulReWUSynql3RgkReIwwUfvjyhIxtAKn9HtBi2MgZzDlHJelJkm_TxWl7z3cOLxyjoqw6lW2t7xHbkq7PZGp0ZKawaQOJ97-LhYySfC7zuQXNEYYNLdx8tJI.JhzY8mb7YFAvloYoynVFXQ\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Surecash Query Payment From Server Using Transaction Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n \r\n\t\"transactionId\": \"12010cf8-f2de-4df8-83fe-cb9039a14b74\",\r\n\t\"customerMobileNumber\": \"01959118338\"\r\n\t\r\n}\r\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/external/surecash/payment",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"external",
+						"surecash",
+						"payment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Bkash Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "username",
+								"value": "sandboxTestUser",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "hWD@8vtzw0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/grant",
+							"protocol": "https",
+							"host": [
+								"checkout",
+								"sandbox",
+								"bka",
+								"sh"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"grant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 12:39:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "fd8a7a8f-b58e-4f46-941b-c5ee9fced7dd"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRgpOHqYyQ0FWJA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6e16e-379a1748fee305dc370c65ac;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiZmFkOWYxYjQtODdjYy00OTJhLTk4NDEtNmRjYmI1ZjkwY2E4IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNjYzNTAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjY5OTUwLCJpYXQiOjE1NzIyNjYzNTB9.LiyuKBc39JZU7S6hxWMv6AhnOHTYxcJTaba-yiK-UI2rf89JlsOm7Ru32YbNPRMzPCDopHbbER9Bbi1946PhAJc9UEuzVar2r9an3akAhcX7llL6-TJYRJ1cLLhlRTEMMJ_Kv6f3S3ZwYDSEj5oSZHm5AHqNDwUMkGjXYskAXXJtD9aPM-c4e0Vf3jO7fsI2rXV-kU2UwGzouSJzMA2owA5SfLeiDJKXesyG5pMSdM2EdNKYdNeWqobYqvFMrTtWrEPP6dmUx5G1hbZwy_Sr69IrdQcefS-MJ_cs7-935WzJhEnO4n-cLODHLM49DT6xkD5HsaewzM0edqbl5Wrtow\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.UsLJFeSQR1FU0mdmUH_7kUQEZ-X62l4VRfvGXRdzOl2ILl54MYVW8vCs7qrmyWH-izH9I5IeXZLl5Q6fi46PzxDVftMI1emdCGoI81fC4L-F940Wg-PpKF4u4cmlahprXd-CCACeEDNlpRtWHlTVbTxS_oAS0cTtTGRQHrR0HU5zyRHy-XhsyObRYYV7HVDt9w1RVQc-Tw-0LxaV0z4sQf4JWpjNyJkrYkugKXpmy6Ep9eKTqDzNYYQ70LMimaZoUFLTR0FIQhrZXbF6PkSFIQcOR8sBvxYqtWO9ykb5Fwqhq1xIV62GTAh8qVvvzWlCuRKlKEWGCLKomYvQgJxP4w.jWGwaEyWpxhTycod.fWaetokBXXW96jz0ASmkzxwov8eNwx57jr4n3lTUZwenTrLCNYOnrcbnwl4_epSa5-Kf2wiK7W9a7RGgx8vpdBloaEsHlTwbIYRkr7ZnzH5vM0Ty2WP0uZ19rh7rMqyySnWaufdBvR9m5gzbcERHeZ2WnAM_k3JZV3_snecusgGywbH5BlKQzYAlWZFNVntEPPB4jUt-lfOE-NzPGtrJHDJ6AxIvi07bDd8KVhaYBb01m-BJAjyCzh3fhBw5iky49J02kgWmCZU77KyWUdceWjE-F2aRI6pWVTpxdWEO9K9QE7vMxo5h-nwEgVQawNXc5aukRmfGHNllntwx5N6-Y4gSS9ykZYhUzenOMeBB9bb6SHCuN00wjY2PWKz6cMPW0BHlq4eT7u0aPwCz3IjQtk6V9NJYsEDWuEteqaW7lYA2lLv0RQF5jtBFeLuI-sGDrn32IezLrRhvgialQim71OE9mAKvGKyU1yikSshQ5UFPBXeKF1s1AHVujjISpcpxkBjL7ZEkmJ1--XcpsngOWLPdUAwzlWzpGS1UqGhbaPZhJMN6rlGEDpDHs5HywcmokKgXtznRdzJqi6iX1D_lrQPjOYN4eTt7mzRRP8Txd9Ng76IN5NbsTnPG55GmceAftl2Wmz-tI33pQaI2yETV7E4LMireM-piup2DJD46_utU62QYWBh_6DrzO5oz3Tl2JSE6B9SDkCRslcekaDVLmrdvQP2Nf8LmfXoKw4aRIefh0DsOSWlI-3gdX3DWbXhBvv1pnJgVZWCZVVGOGbf4znKppMpioSQ4cLHu_K0AJHhmEZ2v3bGaZzwpA9hLs-8EgWQ1wxw-O3wj_lkw5juW5YQ_5PN-Uwrelv7jDif8zSa_dnLWGFxUvRIA4DupGwh7Nl74lfAoeyZTQGQdBgI99FHnYzJxV7SUVN_bpwKUDaMP2b-4ZoXR2JSYwR8PdcBN8WNGPvhVhW8RNajfvIoTs-hLQ94Z-GrmRZvQUwPrtGwKDHc-q3BuSyvd7FD_sUPbNiUAwZLmdJNmbAZJ1IvRtOol7gTu8JyRcK9uTEW8Q5HYwvG5qtaBS4nwp0WOon2qyiz_NX3H9NGK9HxD5XshonEnK3_zOn8D6VOggubcaFNgnDs0jCGk7BObA_s8L9j46jEasw35ntkoDgjLe4C-0U1oRH6eowW-DGrwZzX_03bcaOCulReWUSynql3RgkReIwwUfvjyhIxtAKn9HtBi2MgZzDlHJelJkm_TxWl7z3cOLxyjoqw6lW2t7xHbkq7PZGp0ZKawaQOJ97-LhYySfC7zuQXNEYYNLdx8tJI.JhzY8mb7YFAvloYoynVFXQ\"\n}"
+				},
+				{
+					"name": "Get Bkash Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": "sandboxTestUser"
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "hWD@8vtzw0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\",\r\n\t\"refresh_token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/refresh",
+							"protocol": "https",
+							"host": [
+								"checkout",
+								"sandbox",
+								"bka",
+								"sh"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"refresh"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 13:44:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "8702a250-f68a-4619-bed5-8996a1560046"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRqNXGS6yQ0FpvQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6f0bb-394d85027dd5ecc9f81a0a27;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjczODY4LCJpYXQiOjE1NzIyNzAyNjh9.F7zAcjiffm2MuKcktaZ3d90cEaiMpf9Y3CmwpUbcLy8WsCQBZqxOu4mDkU_E1mtX-UEzG7X_cOozW5BS6p05quku5F29xhj_XiNaTTQ3z9sypb3_f6KON9V1oYTYNl29wyABUof7rEVypxlwqo1Hbi8lRYPlUdssyEOZlRXwNfxgf9D7dUn1qE8PtxTJd2tA4zYe7DO_4D3wcyY87rn-FVAWkl3NMwIhnHlVq4ct1vaPLsRmZI2hnFsNI_KpfxNy1BqIEXN8q0dgyxAxB82TS61pvkwZLTYA8a6ciWvG_bc29ai6z5tuxEmcSDZ7YE4MGF2Q2LEv8RjvF7zRDcSmmg\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\n}"
+				},
+				{
+					"name": "Bkash Create Payment (for personal use)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w"
+							},
+							{
+								"key": "x-app-key",
+								"type": "text",
+								"value": "5tunt4masn6pv2hnvte1sb5n3j"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/create",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"payment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 15:02:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "99d3178f-fa1e-469d-9a9f-2fbaeeb0d458"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CR1m5HXwyQ0FTFQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db702f8-5ae5463768b93482258181b2;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Bkash Create Payment (for personal use)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiMTEyN2MzMDQtNjg0Zi00ZTBlLWI5MDMtNWVjMWI5ZDQyNDk2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzMyODAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc2ODgwLCJpYXQiOjE1NzIyNzMyODB9.VVyh-Pd-_bhLEyaUOzdr1y-0T7Y_OR2DIs19KWdZGAPiX9Wzrxhw-zfkuCvTIVRgPfn4bcGoD6anYuhE-0j6zSzp3S-ypGrLMRj2j4fiu5wjLZi9kBgwaxHS_5p47vp5UF-N8kQJakXp8J80KOy_5vMfnATEJVzU9wnhN5YYIZNTjvzNrk4oqhturxlIthdFH69jbXet_wiIOVdr6IYOsonR1cGQNyq_pm9lahGbxmGKiVF7ZDKam9KQ51GlMTLt2v2d8-X0vyAvS8AOk0PDo3A677Qi-dTiRudhrPM4xpuvAuZBBkPMG_9jG8bmkI3C8t67r0PWFpGne0trIT8K2w"
+							},
+							{
+								"key": "x-app-key",
+								"type": "text",
+								"value": "5tunt4masn6pv2hnvte1sb5n3j"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/payment/create",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"payment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 15:02:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "99d3178f-fa1e-469d-9a9f-2fbaeeb0d458"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CR1m5HXwyQ0FTFQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db702f8-5ae5463768b93482258181b2;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"paymentID\": \"M8A5HMX1572274936899\",\n    \"createTime\": \"2019-10-28T15:02:16:995 GMT+0000\",\n    \"orgLogo\": \"https://s3-ap-southeast-1.amazonaws.com/merchantlogo.sandbox.bka.sh/merchant-default-logo.png\",\n    \"orgName\": \"TestCheckoutDemoMerchant1\",\n    \"transactionStatus\": \"Initiated\",\n    \"amount\": \"10\",\n    \"currency\": \"BDT\",\n    \"intent\": \"sale\",\n    \"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\n}"
+				},
+				{
+					"name": "Get Bkash Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": "sandboxTestUser"
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "hWD@8vtzw0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"app_key\":\"5tunt4masn6pv2hnvte1sb5n3j\",\r\n\t\"app_secret\": \"1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka\",\r\n\t\"refresh_token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BkashUrl}}/v1.2.0-beta/checkout/token/refresh",
+							"host": [
+								"{{BkashUrl}}"
+							],
+							"path": [
+								"v1.2.0-beta",
+								"checkout",
+								"token",
+								"refresh"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2019 13:55:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2720"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "73586bfe-f780-442a-97ae-4e4d326a0d90"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "CRrwcG-RSQ0Ftdg="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5db6f335-4b25d0324cf582a076c92cb0;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"id_token\": \"eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiOTVhMjEyNzctZmVlMi00MTE1LThhOGQtNGRlMTczOWU2YTY2IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NzIyNzAyMTIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNTcyMjc0NTAyLCJpYXQiOjE1NzIyNzA5MDJ9.JgCZm3b5_3kOrCZ_6ngBQhhBSp3u6oIhLTarwYq5SU3XDzogZ7NCrVMrzt7M7AsmbqcA64XBHZoD4n6DKFx7FvUR_sLwTf2FoRArw7pNREaAoyYt3SoMRCeX6bs7cIzGrb4XPriOsvTEF8i1C6Jjm4hj8Nm2YNamWaRr_9DHq-bKJIS-bQYc3p_BPcYeat6Jhna5_m72iDO3_HVJKybwiduqGurwymC4CoPqUpcOqMcqKFPzNU3OUzT8owB9J1ICjIb-CvKTKJC-4bycpxnKr6AS9qEMZVrTpwZe0PnDM48m_Pb0vykvT6HVqwDC1BNojUGdXKewO_Sj0jhDl7QQKA\",\n    \"expires_in\": 3600,\n    \"refresh_token\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DNe7DzQSG6RTSypRChXS3TAZHGHLvyYtc1iIvVSL18divaWDgzfEg2RcilEPH-QsobcEpx8rjOuN5qiSzbwVL_0W1p-98uZISJFalvn6FOaHgSlopaQ-InAGD7VczV13yEQmZUQen9CjHQQa9mB_wD9A14yOAcATfiUrTEYdBgo0VE1_RYhztPOv7REci6bH8OKwFea2T41qEvgdc1LltqVrSDTQUHlv8SEQUZqNuem26Zj3tGZ9pn0SOVnWqK3vMb4Ze0_a8GLTDp4FvF0jx_xjsyhEXT0lnGIZll800oqNLW4Fe3GLgHt8EHJ_1Y_0gs1xYse_qtWgL2ZH5ekHZw.zrIADkqFWAR1qchE.aGFhOS2RguBpnDi5sV5o6uhf7gNks2aRZP5SMlpxqAQjeQiIZWcgDL2Dl25xjSRnlMIrzcv5K_zcWW2-kEcAhEEtceYUf89lSM8Zvmwl8TQap_yxbsnv9gCDaSTXYNmxr0caKSYCTOiRqL6iohOjX4zbUPpPMTRZOdqIHTJnkuRA1Me6PDuUR2ujNjKlljh9tTvisCrrjHkvV_BqT4hfq-kVPXPOn2Zno7qM6WMvJJTwFomTEHhNahD2D-qdhdKx_UPGv9IyxR14hINl8JnmfghF2vlzz_gFrCWb-ZpOKagRj_GWmTAg8JZ4rgoFTV1bhV7F0x0FC4dpBEYLAShFe1s_oj4SmGs8KE0_yGbuw3udTmRfOUrXVOYkJXougbBQkH81dU5j4E-p7uFMbD_GeYoycDRUsq3VWAnRuGjHgv_Uk1qvzeWvZqSuzZOJGTqcYFtWBS0eah36If0qptzUqQnKx0p1-rl3gZMFLG_2H6rec0ZoaaKdk0nYKvzfgelfV0W2Az4w7bKsgCP-VznRCWdQR-P2Bx7njQkwQIjVuPDibsJ3xXKEsHR9wNqcQlCH0bIJ7TF30DnCOl7tDEXHif5ZJztEQQmgg0s10P4HR0FzPd-IhIK8vkUb6E3Blc5FL-y6z6xRBzwx1cJPU0E7LofUDiwOmGz_uI7fnZxdELcJfUFc-YrEzMbsa1IgyvP46UZYvMPElr8BDKMqKbQ0JyThFxxukUxFOF9JGgMsHhZc6gFLkLcO9YqcJHCI2rAHXi51GhHb-zukokoseHRcBDftbRJlyl0lY3CPpvP-bXF4gp9-9ELzRta_tTz6TN-uwaCqzifQdIgzX4_e2ZOT95AhEnpdcU_zJF05frg466sO2PcQ8LZBJvsVe9b7uea4uPKrUmvKvfgolaeogkf4bDpnEDw3CvodsLa0FnVEufVQgnGzmaO3UCLJpQVu7Ki9olDA-5zjU_hdcwlDV-55CAioR8ciW42HaXrd7xAaxzRo7rmSaXM1Vnsj08LGDaKjggwyXHcqqpDrg7avxuvtJ6YUQVD4USq9mkGpj0-AoePIEV3tGmK1T_aT_5EPKxDnn3qYf1E7rObGNzN1dpy-uphFSbZAwBMwf5BvUXY8O7MhN6mxh1G7Yw5DU1hUeMRIGF5bs1ltH0qbRVwi5W8wlC6yPFqtszo1TANGIKNx08AF50XJnsML0k2oSe-NuXSDRgy8L6-alLQEgQ-mUe_Y7SVSuIV0buwa7Doo3Dm7rK8ruX76FwEPPdlTHvKPpHd6CCQyyEf7Hd0h9y77VLppF-NVfqhRPU_E6_94VRI.P7xQDjiTLCm9DWNABoKFBg\"\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "cdcfffa8-9a76-4b46-906c-c6af7cbee799",
+			"id": "fb35eeb1-1c05-48ac-96db-1ae7eae03f57",
 			"key": "BaseUrl",
 			"value": "http:localhost:8080",
 			"type": "string"
