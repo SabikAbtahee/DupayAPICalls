@@ -11,7 +11,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "localhost:9000/api/admin/withdraw",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"admin",
+						"withdraw"
+					]
 				},
 				"description": "Get all withdraws by admin. admin must be logged in"
 			},
@@ -19,11 +28,35 @@
 		},
 		{
 			"name": "Get single withdraw",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{admin}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:9000/api/user/withdraw/{withdraw}",
+					"raw": "localhost:9000/api/user/withdraw/145f1d47-8c61-46bf-aa5a-88a69201686b",
 					"host": [
 						"localhost"
 					],
@@ -32,7 +65,7 @@
 						"api",
 						"user",
 						"withdraw",
-						"{withdraw}"
+						"145f1d47-8c61-46bf-aa5a-88a69201686b"
 					]
 				},
 				"description": "Get single withdraws by a specific user using the withdraw id. user must be logged in. Admin has access to all wihdraws but only merchant can see or access his/her withdraw."
@@ -42,19 +75,39 @@
 		{
 			"name": "create withdraw by merchant",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{tushar}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 200,\n    \"merchantAccount\": {\n        \"id\": \"56b87147-0473-4b3d-a0d1-755dc264fa0a\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:9000/api/user/withdraw/{withdraw}",
+					"raw": "localhost:9000/api/merchant/withdraw",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
 						"api",
-						"user",
-						"withdraw",
-						"{withdraw}"
+						"merchant",
+						"withdraw"
 					]
 				},
 				"description": "Creates a withdraw by a merchant. Merchant must be logged in. Merchant account id should belong to merchant logged in currently.  Merchant account id and requested amount should be provided within the request body. Requested amount must be less than or equal to the total amount. Again, if there already exists a request of  withdrawal, the amount must be adjusted with the total amount available in the merchant's account."
@@ -64,19 +117,40 @@
 		{
 			"name": "Changing withdraw status of a request by admin",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{admin}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"145f1d47-8c61-46bf-aa5a-88a69201686b\",\n    \"transactionId\": null,\n    \"status\": \"DONE\",\n    \"systemAccount\": null\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:9000/api/user/withdraw/{withdraw}",
+					"raw": "localhost:9000/api/admin/withdraw/changestatus",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
 						"api",
-						"user",
+						"admin",
 						"withdraw",
-						"{withdraw}"
+						"changestatus"
 					]
 				},
 				"description": "For changing  withdraw status user must be logged in as admin. The status can be of 4 types: PENDING, IN_PROGRESS, DONE, REJECTED. When a request comes for withdrawal, status is automatically assigned as PENDING. The admin can then only change the status to IN_PROGRESS or REJECTED. Without changing the request to IN_PROGRESS, the request can't be DONE. For changing the status to DONE from IN_PROGRESS, the transactionId and the systemAccount."
