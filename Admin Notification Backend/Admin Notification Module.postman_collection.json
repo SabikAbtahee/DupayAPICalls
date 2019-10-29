@@ -1,0 +1,1035 @@
+{
+	"info": {
+		"_postman_id": "130e08b8-6d39-4290-bdb4-8229fb44c9bd",
+		"name": "Admin Notification Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"bsse0801@iit.du.ac.bd\",\r\n    \"password\": \"iit123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/login",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Send Messages to All Merchants",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"bsse0801@iit.du.ac.bd\",\r\n    \"password\": \"iit123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/api/login",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "387"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 13:34:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\"id\":\"6cf4d172-deed-4086-898a-23ee2da18109\",\"username\":\"tkhana\",\"email\":\"bsse0801@iit.du.ac.bd\",\"password\":\"\",\"name\":\"Tahmid\",\"role\":\"ADMIN\",\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q\"}"
+				}
+			]
+		},
+		{
+			"name": "Send Messages to All Merchants Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\": \"How is she :P ?\",\n\t\"merchantIds\": [\"ju\", \"tt\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/admin/notification",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"notification"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Send Messages to All Merchants Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\": \"How is she :P ?\",\n\t\"merchantIds\": [\"ju\", \"tt\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 16:28:21 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Email has been sent to the merchants\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Notifications of Merchant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/admin/notification",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"notification"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Notifications of Merchant",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 21:02:13 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 1,\n        \"timestamp\": \"2019-10-20 17:36:09\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 2,\n        \"timestamp\": \"2019-10-20 17:49:33\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 3,\n        \"timestamp\": \"2019-10-23 15:18:26\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 5,\n        \"timestamp\": \"2019-10-23 15:38:53\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 6,\n        \"timestamp\": \"2019-10-23 15:43:01\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 7,\n        \"timestamp\": \"2019-10-23 15:44:45\"\n    },\n    {\n        \"message\": \"new notification\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 8,\n        \"timestamp\": \"2019-10-23 16:25:21\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr Hasan\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 9,\n        \"timestamp\": \"2019-10-23 16:46:15\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr Hasan\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 10,\n        \"timestamp\": \"2019-10-24 12:44:07\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr jamil.\",\n        \"merchantIds\": [\n            \"5c44da9e-e1e4-4a5a-85eb-c169f6ed1008\"\n        ],\n        \"id\": 11,\n        \"timestamp\": \"2019-10-26 21:05:29\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr jamil.Shee din boore\",\n        \"merchantIds\": [\n            \"5c44da9e-e1e4-4a5a-85eb-c169f6ed1008\"\n        ],\n        \"id\": 12,\n        \"timestamp\": \"2019-10-26 21:11:06\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 13,\n        \"timestamp\": \"2019-10-29 22:15:38\"\n    },\n    {\n        \"message\": \"When are you getting married?\",\n        \"merchantIds\": [],\n        \"id\": 14,\n        \"timestamp\": \"2019-10-29 22:18:42\"\n    },\n    {\n        \"message\": \"How is she :P ?\",\n        \"merchantIds\": [\n            \"ju\",\n            \"tt\"\n        ],\n        \"id\": 15,\n        \"timestamp\": \"2019-10-29 22:28:21\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get All Notifications of Merchant (Contains only From)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/admin/notification?from=2019-10-23 15:18:27",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"notification"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2019-10-23 15:18:27"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Notifications of Merchant (Contains only From)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?from=2019-10-23 15:18:27",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-10-23 15:18:27"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:55:35 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 5,\n        \"timestamp\": \"2019-10-23 15:38:53\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 6,\n        \"timestamp\": \"2019-10-23 15:43:01\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 7,\n        \"timestamp\": \"2019-10-23 15:44:45\"\n    },\n    {\n        \"message\": \"new notification\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 8,\n        \"timestamp\": \"2019-10-23 16:25:21\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr Hasan\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 9,\n        \"timestamp\": \"2019-10-23 16:46:15\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr Hasan\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 10,\n        \"timestamp\": \"2019-10-24 12:44:07\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr jamil.\",\n        \"merchantIds\": [\n            \"5c44da9e-e1e4-4a5a-85eb-c169f6ed1008\"\n        ],\n        \"id\": 11,\n        \"timestamp\": \"2019-10-26 21:05:29\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr jamil.Shee din boore\",\n        \"merchantIds\": [\n            \"5c44da9e-e1e4-4a5a-85eb-c169f6ed1008\"\n        ],\n        \"id\": 12,\n        \"timestamp\": \"2019-10-26 21:11:06\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 13,\n        \"timestamp\": \"2019-10-29 22:15:38\"\n    },\n    {\n        \"message\": \"When are you getting married?\",\n        \"merchantIds\": [],\n        \"id\": 14,\n        \"timestamp\": \"2019-10-29 22:18:42\"\n    },\n    {\n        \"message\": \"How is she :P ?\",\n        \"merchantIds\": [\n            \"ju\",\n            \"tt\"\n        ],\n        \"id\": 15,\n        \"timestamp\": \"2019-10-29 22:28:21\"\n    }\n]"
+				},
+				{
+					"name": "Get All Notifications of Merchant (Contains only From)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?from=2019-10-23 15:18:27",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-10-23 15:18:27"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:55:35 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 5,\n        \"timestamp\": \"2019-10-23 15:38:53\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 6,\n        \"timestamp\": \"2019-10-23 15:43:01\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 7,\n        \"timestamp\": \"2019-10-23 15:44:45\"\n    },\n    {\n        \"message\": \"new notification\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 8,\n        \"timestamp\": \"2019-10-23 16:25:21\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr Hasan\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 9,\n        \"timestamp\": \"2019-10-23 16:46:15\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr Hasan\",\n        \"merchantIds\": [\n            \"eb5e4a39-a46a-4ac6-b396-1984bf011b2c\"\n        ],\n        \"id\": 10,\n        \"timestamp\": \"2019-10-24 12:44:07\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr jamil.\",\n        \"merchantIds\": [\n            \"5c44da9e-e1e4-4a5a-85eb-c169f6ed1008\"\n        ],\n        \"id\": 11,\n        \"timestamp\": \"2019-10-26 21:05:29\"\n    },\n    {\n        \"message\": \"Notification from dupay to Mr jamil.Shee din boore\",\n        \"merchantIds\": [\n            \"5c44da9e-e1e4-4a5a-85eb-c169f6ed1008\"\n        ],\n        \"id\": 12,\n        \"timestamp\": \"2019-10-26 21:11:06\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 13,\n        \"timestamp\": \"2019-10-29 22:15:38\"\n    },\n    {\n        \"message\": \"When are you getting married?\",\n        \"merchantIds\": [],\n        \"id\": 14,\n        \"timestamp\": \"2019-10-29 22:18:42\"\n    },\n    {\n        \"message\": \"How is she :P ?\",\n        \"merchantIds\": [\n            \"ju\",\n            \"tt\"\n        ],\n        \"id\": 15,\n        \"timestamp\": \"2019-10-29 22:28:21\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get All Notifications of Merchant (Contains only To)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/admin/notification?to=2019-10-23 15:37:49",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"notification"
+					],
+					"query": [
+						{
+							"key": "to",
+							"value": "2019-10-23 15:37:49"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Notifications of Merchant (Contains only To)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?to=2019-10-23 15:37:49",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "to",
+									"value": "2019-10-23 15:37:49"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:56:43 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 1,\n        \"timestamp\": \"2019-10-20 17:36:09\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 2,\n        \"timestamp\": \"2019-10-20 17:49:33\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 3,\n        \"timestamp\": \"2019-10-23 15:18:26\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    }\n]"
+				},
+				{
+					"name": "Get All Notifications of Merchant (Contains only To)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?to=2019-10-23 15:37:49",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "to",
+									"value": "2019-10-23 15:37:49"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:56:43 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 1,\n        \"timestamp\": \"2019-10-20 17:36:09\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 2,\n        \"timestamp\": \"2019-10-20 17:49:33\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 3,\n        \"timestamp\": \"2019-10-23 15:18:26\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get All Notifications of Merchant (Contains From and To)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/admin/notification?from=2019-10-22 15:37:49&to=2019-10-23 15:37:49",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"notification"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2019-10-22 15:37:49"
+						},
+						{
+							"key": "to",
+							"value": "2019-10-23 15:37:49"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Notifications of Merchant (Contains From and To)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?from=2019-10-22 15:37:49&to=2019-10-23 15:37:49",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-10-22 15:37:49"
+								},
+								{
+									"key": "to",
+									"value": "2019-10-23 15:37:49"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:57:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 3,\n        \"timestamp\": \"2019-10-23 15:18:26\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    }\n]"
+				},
+				{
+					"name": "Get All Notifications of Merchant (Contains From and To)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?from=2019-10-22 15:37:49&to=2019-10-23 15:37:49",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-10-22 15:37:49"
+								},
+								{
+									"key": "to",
+									"value": "2019-10-23 15:37:49"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:57:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 3,\n        \"timestamp\": \"2019-10-23 15:18:26\"\n    },\n    {\n        \"message\": \"abc\",\n        \"merchantIds\": [],\n        \"id\": 4,\n        \"timestamp\": \"2019-10-23 15:37:48\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get All Notifications of Merchant (Error Format)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJic3NlMDgwMUBpaXQuZHUuYWMuYmQiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTU3MjM1NjA1NywiZXhwIjoxNTczMjIwMDU3fQ.p3H3ZncIY3rRB_Kjn6F02uvwW91jEkcDD5sfjwXJSr_7IhRcDUCxswxWsoXEQqn1mW9NodKzjecgQZUpjfZ38Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/admin/notification?to=2019-10-23T15:37:49Z",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"notification"
+					],
+					"query": [
+						{
+							"key": "to",
+							"value": "2019-10-23T15:37:49Z"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Notifications of Merchant (Error Format)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?to=2019-10-23T15:37:49Z",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "to",
+									"value": "2019-10-23T15:37:49Z"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:57:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": 1572382656607,\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2019-10-23 15:37:49Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\",\n    \"trace\": \"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2019-10-23 15:37:49Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\\r\\n\\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:132)\\r\\n\\tat org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:634)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:741)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)\\r\\n\\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)\\r\\n\\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat du.iit.payment.dupay.config.JwtTokenAuthenticationFilter.doFilterInternal(JwtTokenAuthenticationFilter.java:67)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)\\r\\n\\tat org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)\\r\\n\\tat org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)\\r\\n\\tat org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\\r\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:834)\\r\\nCaused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2019-10-23 15:37:49Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\\r\\n\\tat org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)\\r\\n\\tat org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:191)\\r\\n\\tat org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:129)\\r\\n\\tat org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)\\r\\n\\tat org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)\\r\\n\\tat org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:693)\\r\\n\\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:124)\\r\\n\\t... 77 more\\r\\nCaused by: java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\\r\\n\\tat org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:206)\\r\\n\\tat org.springframework.format.support.FormattingConversionService$AnnotationParserConverter.convert(FormattingConversionService.java:321)\\r\\n\\tat org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)\\r\\n\\t... 83 more\\r\\nCaused by: java.time.format.DateTimeParseException: Text '2019-10-23 15:37:49Z' could not be parsed, unparsed text found at index 19\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2049)\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948)\\r\\n\\tat java.base/java.time.LocalDateTime.parse(LocalDateTime.java:492)\\r\\n\\tat org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:75)\\r\\n\\tat org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:46)\\r\\n\\tat org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:200)\\r\\n\\t... 85 more\\r\\n\",\n    \"path\": \"/api/admin/notification\"\n}"
+				},
+				{
+					"name": "Get All Notifications of Merchant (Error Format)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/admin/notification?to=2019-10-23T15:37:49Z",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "to",
+									"value": "2019-10-23T15:37:49Z"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2019 20:57:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": 1572382656607,\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2019-10-23 15:37:49Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\",\n    \"trace\": \"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2019-10-23 15:37:49Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\\r\\n\\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:132)\\r\\n\\tat org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:634)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:741)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)\\r\\n\\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)\\r\\n\\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat du.iit.payment.dupay.config.JwtTokenAuthenticationFilter.doFilterInternal(JwtTokenAuthenticationFilter.java:67)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\\r\\n\\tat org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)\\r\\n\\tat org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)\\r\\n\\tat org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)\\r\\n\\tat org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\\r\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:834)\\r\\nCaused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDateTime] for value '2019-10-23 15:37:49Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\\r\\n\\tat org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)\\r\\n\\tat org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:191)\\r\\n\\tat org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:129)\\r\\n\\tat org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)\\r\\n\\tat org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)\\r\\n\\tat org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:693)\\r\\n\\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:124)\\r\\n\\t... 77 more\\r\\nCaused by: java.lang.IllegalArgumentException: Parse attempt failed for value [2019-10-23 15:37:49Z]\\r\\n\\tat org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:206)\\r\\n\\tat org.springframework.format.support.FormattingConversionService$AnnotationParserConverter.convert(FormattingConversionService.java:321)\\r\\n\\tat org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)\\r\\n\\t... 83 more\\r\\nCaused by: java.time.format.DateTimeParseException: Text '2019-10-23 15:37:49Z' could not be parsed, unparsed text found at index 19\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2049)\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948)\\r\\n\\tat java.base/java.time.LocalDateTime.parse(LocalDateTime.java:492)\\r\\n\\tat org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:75)\\r\\n\\tat org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:46)\\r\\n\\tat org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:200)\\r\\n\\t... 85 more\\r\\n\",\n    \"path\": \"/api/admin/notification\"\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
