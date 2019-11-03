@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "1227b140-9036-43e7-9993-8187731fe020",
+		"name": "Transaction Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/payment",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Payment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"payAmount\": 125,\n\t\"walletType\":\"SURECASH\",\n\t\"merchantId\": \"tt\",\n\t\"systemAccountId\": \"f1e7d4cf-f098-4bf7-86a1-9370e161df72\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/api/payment",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"payment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Nov 2019 18:36:46 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Payment created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/payment?pageSize=2&pageNumber=0&walletType=bkash",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"payment"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "2"
+						},
+						{
+							"key": "pageNumber",
+							"value": "0"
+						},
+						{
+							"key": "walletType",
+							"value": "bkash"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Payment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/api/payment?pageSize=2&pageNumber=0&walletType=bkash",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"payment"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "pageNumber",
+									"value": "0"
+								},
+								{
+									"key": "walletType",
+									"value": "bkash"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Nov 2019 18:36:36 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total\": 2,\n    \"totalPages\": 1,\n    \"hasPrevious\": false,\n    \"hasNext\": true,\n    \"isFirst\": true,\n    \"isLast\": true,\n    \"isEmpty\": false,\n    \"pageNumber\": 0,\n    \"numberOfElements\": 2,\n    \"pageSize\": 2,\n    \"isSorted\": true,\n    \"offset\": 0,\n    \"isPaged\": true,\n    \"isUnpaged\": false,\n    \"sortStyle\": \"pay_date: DESC\",\n    \"content\": [\n        {\n            \"id\": \"ef51218f-e9a7-4737-87f9-791fc521e3ff\",\n            \"payDate\": \"2019-11-02 23:09:57\",\n            \"payAmount\": 100,\n            \"walletType\": \"BKASH\",\n            \"merchantId\": \"tt\",\n            \"systemAccountId\": \"f1e7d4cf-f098-4bf7-86a1-9370e161df72\"\n        },\n        {\n            \"id\": \"88e78a18-7242-40ba-8fad-ab55598ea9cd\",\n            \"payDate\": \"2019-11-02 23:01:22\",\n            \"payAmount\": 100,\n            \"walletType\": \"BKASH\",\n            \"merchantId\": \"tt\",\n            \"systemAccountId\": \"f1e7d4cf-f098-4bf7-86a1-9370e161df72\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
