@@ -156,6 +156,52 @@
 				"description": "For changing  withdraw status user must be logged in as admin. The status can be of 4 types: PENDING, IN_PROGRESS, DONE, REJECTED. When a request comes for withdrawal, status is automatically assigned as PENDING. The admin can then only change the status to IN_PROGRESS or REJECTED. Without changing the request to IN_PROGRESS, the request can't be DONE. For changing the status to DONE from IN_PROGRESS, the transactionId and the systemAccount."
 			},
 			"response": []
+		},
+		{
+			"name": "Get merchantsaccount by merchant id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{saara}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/merchant/merchantacc/{merchantid}",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"merchant",
+						"merchantacc",
+						"{merchantid}"
+					]
+				},
+				"description": "the id should be authenticated merchant id."
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
