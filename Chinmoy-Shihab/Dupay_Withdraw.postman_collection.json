@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2b713ec0-4a4e-43db-8681-7df064555a3f",
+		"_postman_id": "1dd0fd70-0f89-4012-aa12-9f0c976f89f4",
 		"name": "Dupay_Withdraw",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -154,6 +154,98 @@
 					]
 				},
 				"description": "For changing  withdraw status user must be logged in as admin. The status can be of 4 types: PENDING, IN_PROGRESS, DONE, REJECTED. When a request comes for withdrawal, status is automatically assigned as PENDING. The admin can then only change the status to IN_PROGRESS or REJECTED. Without changing the request to IN_PROGRESS, the request can't be DONE. For changing the status to DONE from IN_PROGRESS, the transactionId and the systemAccount."
+			},
+			"response": []
+		},
+		{
+			"name": "Get merchantsaccount by merchant id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{saara}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/merchant/merchantacc/{merchantid}",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"merchant",
+						"merchantacc",
+						"{merchantid}"
+					]
+				},
+				"description": "the id should be authenticated merchant id."
+			},
+			"response": []
+		},
+		{
+			"name": "Get all withdraw request by merchant id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{tushar}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/merchant/withdraw/291adf28-539b-40b7-9a42-3cfce6b787eb",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"merchant",
+						"withdraw",
+						"291adf28-539b-40b7-9a42-3cfce6b787eb"
+					]
+				},
+				"description": "the id should be authenticated merchant id."
 			},
 			"response": []
 		}
