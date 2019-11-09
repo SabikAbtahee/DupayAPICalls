@@ -4222,7 +4222,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\"\r\n}",
+					"raw": "{\"amount\": 10,\r\n\"currency\": \"BDT\",\r\n\"intent\": \"sale\",\r\n\"merchantInvoiceNumber\": \"merchantInvoiceNumber\",\r\n\"invoiceId\": \"37160c0b-0ead-4290-848b-284b37980ee9\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -7821,18 +7821,200 @@
 		{
 			"name": "Create Invoice",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"productId\": \"123\",\n\"extraInformation\": \"23232\",\n\"appKey\": \"1234\" \n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "{{BaseUrl}}/api/external/invoice",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"external",
+						"invoice"
+					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Create Invoice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"productId\": \"123\",\n\"extraInformation\": \"23232\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/api/external/invoice",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"external",
+								"invoice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Nov 2019 06:28:18 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"37160c0b-0ead-4290-848b-284b37980ee9\",\n    \"createTime\": \"2019-11-09 12:28:18\",\n    \"productId\": \"123\",\n    \"extraInformation\": \"23232\"\n}"
+				},
+				{
+					"name": "Create Invoice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"productId\": \"123\",\n\"extraInformation\": \"23232\",\n\"appKey\": \"1234\" \n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/api/external/invoice",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"api",
+								"external",
+								"invoice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Nov 2019 06:45:07 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"f960a177-4a70-4c29-aec1-628e305f85a4\",\n    \"createTime\": \"2019-11-09 12:45:07\",\n    \"appKey\": \"1234\",\n    \"productId\": \"123\",\n    \"extraInformation\": \"23232\"\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "6531b645-0c3b-4de8-8bf6-040cc7aff1c0",
+			"id": "2a53b5f6-ba30-4897-bd3f-4d98fe9b9d06",
 			"key": "BaseUrl",
 			"value": "http:localhost:8080",
 			"type": "string"
