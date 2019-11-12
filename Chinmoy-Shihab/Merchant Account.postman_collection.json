@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "2f00bedf-6021-4775-b543-e4a9ee67a17e",
+		"name": "Merchant Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get single merchant account information by merchant",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/merchant/merchantacc/{merchantid}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"merchant",
+						"merchantacc",
+						"{merchantid}"
+					]
+				},
+				"description": "merchant id and authorized merchant id should be same."
+			},
+			"response": []
+		},
+		{
+			"name": "Get all merchant account by admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{admin}}"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/admin/merchantacc/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"merchantacc",
+						""
+					]
+				},
+				"description": "admin should be authorized"
+			},
+			"response": []
+		},
+		{
+			"name": "create merchant account by merchant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{admin}}"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"accountName\": \"Brac_Bank_saara\",\r\n        \"accountNumber\": \"sssaasasas\",\r\n        \"bankName\": \"Eastern Bank\",\r\n        \"branch\": \"Noakhali\",\r\n        \"merchant\":{\r\n        \t\"id\":\"3e0890ce-17e3-4afe-b6d3-f969e94f7d27\"\r\n        }\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/merchant/merchantacc/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"merchant",
+						"merchantacc",
+						""
+					]
+				},
+				"description": "create merchant account by merchant. see body for details. here merchant account object should be authorized merchant's id"
+			},
+			"response": []
+		},
+		{
+			"name": "update merchant account by merchant Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{tushar}}"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"cc34fd7a-9be5-458d-a366-eee6a1fc47fa\",\r\n        \"accountName\": \"City_bank\",\r\n        \"accountNumber\": \"sabik_assssccs\",\r\n        \"bankName\": \"City_bank\",\r\n        \"branch\": \"Dhaka\",\r\n        \"merchant\":{\r\n        \t\"id\":\"291adf28-539b-40b7-9a42-3cfce6b787eb\" \r\n        }\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/merchant/merchantacc/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"merchant",
+						"merchantacc",
+						""
+					]
+				},
+				"description": "create merchant account by merchant. see body for details. here merchant account object's id should be authorized merchant's id. \n\"id\" should be given and existed in the db"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
